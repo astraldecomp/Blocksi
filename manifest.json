@@ -1,5 +1,5 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+  "update_url": "https://clients2.google.com/service/update2/crx",
 
   "name": "Blocksi Enterprise Edition",
   "short_name": "__MSG_appShortName__",
@@ -16,13 +16,40 @@
     "scripts": ["scripts/background.js"]
   },
   "browser_action": {},
-  "content_scripts": [{
-    "matches": ["http://*/*", "file://*/*", "https://*/*"],
-    "js": ["jQuery/jquery.min.js", "scripts/contentscript.js"],
-    "css": ["css/raiseHand.css"],
-    "run_at": "document_start",
-    "all_frames": false
-  }],
-  "permissions": ["idle", "tabs", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "<all_urls>", "webNavigation", "identity", "identity.email", "geolocation", "storage", "activeTab", "enterprise.deviceAttributes", "notifications", "desktopCapture", "management", "history"],
-  "web_accessible_resources": ["pages/blockPage.html", "images/raise-hand.png", "images/raise-hand.svg", "images/chatBubble.svg", "images/yt-denied.png"]
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "file://*/*", "https://*/*"],
+      "js": ["jQuery/jquery.min.js", "scripts/contentscript.js"],
+      "css": ["css/raiseHand.css"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+    "idle",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "webNavigation",
+    "identity",
+    "identity.email",
+    "geolocation",
+    "storage",
+    "activeTab",
+    "enterprise.deviceAttributes",
+    "notifications",
+    "desktopCapture",
+    "management",
+    "history"
+  ],
+  "web_accessible_resources": [
+    "pages/blockPage.html",
+    "images/raise-hand.png",
+    "images/raise-hand.svg",
+    "images/chatBubble.svg",
+    "images/yt-denied.png"
+  ]
 }

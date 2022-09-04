@@ -8,7 +8,7 @@
     "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
   },
   "appDescription": {
-    "message":"Blocksi is the #1 rated extension for Web & Youtube Filtering, Time Management and trend analysis for Chrome and Chromebooks.",
+    "message": "Blocksi is the #1 rated extension for Web & Youtube Filtering, Time Management and trend analysis for Chrome and Chromebooks.",
     "description": "The description of the application"
   }
 }
